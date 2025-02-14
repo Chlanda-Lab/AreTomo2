@@ -185,6 +185,7 @@ exe: $(OBJS)
 	$(PRJLIB)/libutil.a \
 	-L$(CUDALIB) -L/usr/lib64 \
 	-lcufft -lcudart -lcuda -lc -lm -lpthread \
+	-no-pie \
 	-o AreTomo2
 	@echo AreTomo2 has been generated.
 
